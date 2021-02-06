@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500&display=swap');
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+}
+
+:root {
+  --text-primary: #333333;
+  --text-secondary: rgba(51,51,51, .6);
+  --primary: #270EB7;
+  --secondary: #FF8800;
+  --green: #3DD598;
+  --yellow: #FFC542;
+  --red: #FF565E;
+  --bg-dark1: #22343C;
+  --bg-dark2: #1F2E35;
+  --bg-light: #F5F5FA;
+  --gray: #96A7AF;
+  --blue: #0062FF;
+}
+
+.container {
+  margin: 1rem 5rem;
+}
+
+.box-container-300 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.navbar {
+  background-color:  white ;
+  padding: 8px 2rem;
+}
+
+.footer {
+  background-color: var(--primary);
+  font-weight: lighter;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+/* EDITBOX --------------- */
+
+.editbox textarea {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.editbox .edit-action {
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.editbox .editbox-textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  resize: none;
+  background-color: transparent;
+}
+
+.editbox .editbox-textarea:focus,
+:active,
+:visited {
+  outline: none;
+}
+
+.editbox .text-edit {
+  color: var(--primary);
+  background-color: transparent;
+  font-weight: normal;
+}
+
+.editbox .edit-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+/* BADGE --------------- */
+.badge {
+  width: 2rem;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40%;
+  font-weight: normal;
+  color: white;
+  background-color: var(--blue);
+  margin-bottom: 0.3rem;
+}
+
+
+/* MEDIA QUERIES START--------------- */
+@media (max-width: 1200px) {
+  .container {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: .5rem;
+  }
+}
+

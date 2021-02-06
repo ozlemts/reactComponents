@@ -1,0 +1,76 @@
+.d-none {
+	display: none!important;
+}
+/* Width and Height --------------------------- */
+.w-full { width: 100%; }
+.w-screen { width: 100vw; }
+.w-min { width: min-content; }
+.w-max { width: max-content; }
+
+.h-full { height: 100%; }
+.h-screen { height: 100vh; }
+.h-1 {height: 1rem}
+.h-3 { height: 3rem }
+
+/* Typography--------------------------- */
+/* Typography--------------------------- */
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.25rem;}
+h6 {font-size: 1.1rem;}
+
+/* Flexbox --------------------------- */
+.d-flex { display: flex; }
+
+/* Flex direction */
+.flex-row { flex-direction: row; } /* Default */
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-column { flex-direction: column; }
+.flex-column-reverse{ flex-direction: column-reverse; }
+
+/* Flex wrap */
+.flex-nowrap  { flex-wrap: nowrap; } /* Default */
+.flex-wrap  { flex-wrap: wrap; }
+
+/* Justify content */
+.justify-content-start { justify-content: flex-start; } /* Default */
+.justify-content-end { justify-content: flex-end; }
+.justify-content-center { justify-content: center; }
+.justify-content-around { justify-content: space-around; }
+.justify-content-between { justify-content: space-between; }
+
+/* Align items */
+.align-items-between { align-items: stretch; } /* Default */
+.align-items--start { align-items: flex-start; }
+.align-items-end { align-items: flex-end; }
+.align-items-center { align-items: center; }
+.align-items-baseline { align-items: baseline; }
+
+/* Border Radius--------------------------- */
+.rounded-none { border-radius: 0rem; }
+.rounded-sm { border-radius: 0.125rem; }
+.rounded-md { border-radius: 0.5rem; }
+.rounded-lg { border-radius: 1rem; }
+.rounded-circle { border-radius: 100%}
+
+/* Spacing--------------------------- */
+
+.m-0 { margin: 0; }
+.m-1 { margin: .25rem; }
+.m-2 { margin: .5rem; }
+.m-3 { margin: .75rem; }
+.m-4 { margin: .1rem; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: .25rem; }
+.mb-2 { margin-bottom: .5rem; }
+.mb-3 { margin-bottom: .75rem; }
+.mb-4 { margin-bottom: .1rem; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: .25rem; }
+.p-2 { padding: .5rem; }
+.p-3 { padding: .75rem; }
+.p-4 { padding: .1rem; }
