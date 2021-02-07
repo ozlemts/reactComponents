@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-export const EditBox = () => {
+export const EditBox = (props) => {
 	const [isEditable, setEditable] = useState("false");
 	const [maxChar] = useState(500);
 	const [remainedChar, setRemainedChar] = useState(500);
 	const [rows] = useState(10);
-	const [title] = useState("Product/Service Summary");
 
 	const handleChange = (e) => {
 		setRemainedChar(maxChar - e.target.value.length);
@@ -14,12 +13,11 @@ export const EditBox = () => {
 		setEditable(!isEditable);
 	};
 
-
 	return (
 		<div className="editbox">
-			<div className="edit-header" >
-				<div className = "editbox-title">
-					{title}
+			<div className="custom-label" >
+				<div className = "editbox-label">
+					{props.label}
 				</div>
 				<div className="edit-action" onClick={handleToggle}>
 					<img src={isEditable ? "/edit.svg" : "/ok.svg"} className="h-1">{}</img>
@@ -33,10 +31,10 @@ export const EditBox = () => {
 				onChange={handleChange}
 				className={`editbox-textarea ${isEditable ? "" : "text-edit"}`}
 			></textarea>
-			<div className={`edit-bottom  ${isEditable ? "d-none" : ""}`}>
-				<div className="remained-char">
+			<div className={`edit-bottom  d-flex justify-content-end text-detail ${isEditable ? "d-none" : ""}`}>
+				<i className="remained-char">
 					{remainedChar}/{maxChar}
-				</div>
+				</i>
 			</div>
 		</div>
 	);

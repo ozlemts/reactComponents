@@ -1,6 +1,4 @@
-.d-none {
-	display: none!important;
-}
+.d-none {display: none!important;}
 /* Width and Height --------------------------- */
 .w-full { width: 100%; }
 .w-screen { width: 100vw; }
@@ -58,19 +56,24 @@ h6 {font-size: 1.1rem;}
 /* Spacing--------------------------- */
 
 .m-0 { margin: 0; }
-.m-1 { margin: .25rem; }
-.m-2 { margin: .5rem; }
-.m-3 { margin: .75rem; }
-.m-4 { margin: .1rem; }
+.m-1 { margin: 1rem; }
+.m-2 { margin: 2rem; }
+.m-3 { margin: 3rem; }
+.m-4 { margin: 4rem; }
 
 .mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: .25rem; }
-.mb-2 { margin-bottom: .5rem; }
-.mb-3 { margin-bottom: .75rem; }
-.mb-4 { margin-bottom: .1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+.mb-4 { margin-bottom: 4rem; }
 
 .p-0 { padding: 0; }
-.p-1 { padding: .25rem; }
-.p-2 { padding: .5rem; }
-.p-3 { padding: .75rem; }
-.p-4 { padding: .1rem; }
+.p-1 { padding: 1rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+.p-4 { padding: 4rem; }
+
+.text-detail{
+	color: rgba(1,1,1, .4);
+	font-size: .8rem;
+}
