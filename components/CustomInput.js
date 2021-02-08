@@ -8,7 +8,7 @@ export const CustomInput = (props) => {
 			<div className = "custom-label">
 				{props.label}
 			</div>
-			<input type="text" className="w-full"></input>
+			<input type="text" className="w-full" placeholder={props.placeholder}></input>
 		</div>
 	);
 };

@@ -1,10 +1,10 @@
-
-import React from 'react'
+import React from 'react';
 import Navbar from '../components/Navbar.js';
 import EditBox from "../components/EditBox";
 import Footer from "../components/Footer";
 import CustomInput from "../components/CustomInput";
 import SelectBox from "../components/SelectBox";
+import RadioButton from "../components/RadioButton";
 
 const Index = () => {
 	return (
@@ -24,6 +24,7 @@ const Index = () => {
 						<SelectBox label="Business Model"/>
 						<SelectBox label="Revenue Stream"/>
 						<SelectBox label="TRL: Technology Readiness Level"/>
+						<RadioButton/>
 						<SelectBox label="Country"/>
 						<SelectBox label="Organization"/>
 					</div>

@@ -1,4 +1,5 @@
 .d-none {display: none!important;}
+.invisible { visibility: hidden;}
 /* Width and Height --------------------------- */
 .w-full { width: 100%; }
 .w-screen { width: 100vw; }
