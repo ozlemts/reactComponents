@@ -56,6 +56,9 @@ a {
   border: transparent 1px solid!important;
 }
 
+hr { border: 1px solid #C6CBD4;
+background-color: #C6CBD4}
+
 .navbar {
   background-color:  white ;
   padding: 8px 2rem;
@@ -116,6 +119,14 @@ a {
   background-color: var(--primary);
   color: white;
 }
+
+/* TEAM MEMBER  --------------- */
+
+.member-container {
+  background-color: #f5f5fa;
+  border-radius: .5rem;
+}
+
 
 /* EDITBOX --------------- */
 .editbox {
