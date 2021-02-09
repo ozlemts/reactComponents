@@ -136,6 +136,7 @@ a {
   border: 1px solid #C6CBD4;;
   border-radius: .5rem;
   padding: 1rem;
+  transition: .2s;
 }
 
 .editbox .editbox-textarea:focus,
@@ -154,7 +155,7 @@ a {
 .editbox-textarea:visited,
 .editbox-textarea:active {
   box-shadow: -1px 1px 9px 6px #4b5fd22b;
-  border: none;
+  border-color: transparent;
 }
 
 .shadow {

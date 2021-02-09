@@ -13,6 +13,15 @@ export const RadioButton = () => {
 		id: 3,
 		name: 'name',
 		label: 'name 3'
+	}, {
+		id: 4,
+		name: 'name',
+		label: 'name 4'
+	}, {
+		id: 5,
+		name: 'name',
+		label: 'name 5'
+
 	}];
 
 	const [checkedOptionId, setcheckedOptionId] = useState(1);
@@ -20,7 +29,7 @@ export const RadioButton = () => {
 	const handleChange = (e) => {console.log(e.target.id)}
 
 	return (
-		<div className="radio-button d-flex">
+		<div className="radio-button d-flex justify-content-between">
 			{someData.map(option => {
 				return (
 					<label>
