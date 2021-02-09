@@ -9,9 +9,15 @@ export const EditBox = (props) => {
 	const handleChange = (e) => {
 		setRemainedChar(maxChar - e.target.value.length);
 	};
-	const handleToggle = () => {
-		setEditable(!isEditable);
-	};
+
+	const makeEditable = () => {
+		setEditable( !isEditable);
+	}
+
+	const makeDisabled = () => {
+		setEditable( !isEditable);
+	}
+
 
 	return (
 		<div className="editbox">
@@ -19,16 +25,13 @@ export const EditBox = (props) => {
 				<div className = "editbox-label">
 					{props.label}
 				</div>
-				<div className="edit-action" onClick={handleToggle}>
-					<img src={isEditable ? "/ok.svg" : "/edit.svg"} className="h-1">{}</img>
-				</div>
 			</div>
 			<textarea
-				disabled={!isEditable}
 				rows={rows}
 				maxLength={maxChar}
-				autoFocus= {true}
 				onChange={handleChange}
+				onMouseOver={makeEditable}
+				onMouseLeave={makeDisabled}
 				className={`editbox-textarea ${isEditable ? "text-edit" : ""}`}
 			></textarea>
 			<div className={`edit-bottom  d-flex justify-content-end text-detail ${isEditable ? "" : "invisible"}`}>

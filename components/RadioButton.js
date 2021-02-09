@@ -20,16 +20,18 @@ export const RadioButton = () => {
 	const handleChange = (e) => {console.log(e.target.id)}
 
 	return (
-		<div>
+		<div className="radio-button d-flex">
 			{someData.map(option => {
 				return (
+					<label>
 						<input
 							type="radio"
 							id={option.id}
 							name={option.name}
 							value={option.label}
 							onChange={handleChange}
-						/>
+						/><span>{option.id}</span>
+					</label>
 				);
 			})}
 		</div>

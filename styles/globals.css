@@ -12,7 +12,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--bg-light);
-  color: var(--text-primary);
+  color: var(--primary);
   line-height: 1;
 }
 
@@ -26,10 +26,8 @@ a {
 }
 
 :root {
-  --text-primary: #333333;
-  --text-secondary: rgba(51,51,51, .6);
-  --primary: #270EB7;
-  --secondary: #FF8800;
+  --primary: #333333;
+  --secondary: rgba(51,51,51, .6);
   --green: #3DD598;
   --yellow: #FFC542;
   --red: #FF565E;
@@ -104,6 +102,7 @@ a {
   transition: transform .3s ease;
   padding: .5rem;
   margin-bottom: .2rem;
+  font-family: inherit;
 }
 
 .btn:hover {
@@ -121,7 +120,7 @@ a {
   margin-bottom: 1rem;
 }
 .editbox textarea {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: inherit;
 }
 
 .editbox .edit-action {
@@ -137,7 +136,7 @@ a {
   width: 100%;
   resize: none;
   background-color: transparent;
-  border: .5px solid rgba(1,1,1,.3);
+  border: 1px solid #C6CBD4;;
   border-radius: .5rem;
   padding: 1rem;
   font-weight: 300;
@@ -153,6 +152,18 @@ a {
   color: var(--primary);
   background-color: transparent;
   font-weight: normal;
+}
+
+.editbox-textarea:hover,
+.editbox-textarea:visited,
+.editbox-textarea:active {
+  box-shadow: -1px 1px 9px 6px #4b5fd22b;
+  border: none;
+}
+
+.shadow {
+  box-shadow: -1px 1px 9px 6px #4b5fd22b;
+  border: none;
 }
 
 .editbox .edit-bottom { transform: translate(-.5rem, -1rem);}
@@ -194,6 +205,49 @@ select {
   border: none;
   border-radius: .5rem;
   padding: .5rem;
+}
+
+/* RADIO BUTTON-------------- */
+
+.radio-button label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+}
+.radio-button label input {
+  position: absolute;
+  left: -9999px;
+}
+.radio-button label input:checked + span {
+  background-color: #d6d6e5;
+}
+.radio-button label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+.radio-button label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+.radio-button label span:hover {
+  background-color: #d6d6e5;
+}
+.radio-button label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
 }
 
 /* SING-IN -------------- */
