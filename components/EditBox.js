@@ -31,7 +31,7 @@ export const EditBox = (props) => {
 				onChange={handleChange}
 				onMouseOver={makeEditable}
 				onMouseLeave={makeDisabled}
-				onBlur={ event => console.log(event.target.value, 'Saved')}
+				onBlur={ event => console.log( 'Saved:', event.target.value)}
 				className={`editbox-textarea ${isEditable ? "text-edit" : ""}`}
 			></textarea>
 			<div className={`edit-bottom  d-flex justify-content-end text-detail ${isEditable ? "" : "invisible"}`}>
