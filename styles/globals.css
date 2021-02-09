@@ -139,7 +139,6 @@ a {
   border: 1px solid #C6CBD4;;
   border-radius: .5rem;
   padding: 1rem;
-  font-weight: 300;
 }
 
 .editbox .editbox-textarea:focus,
@@ -177,6 +176,13 @@ a {
   font-family: inherit;
 }
 
+.custom-input input:hover,
+.custom-input input:visited,
+.custom-input input:active {
+  box-shadow: -1px 1px 9px 6px #4b5fd22b;
+  border: none;
+}
+
 /* SELECT-BOX -------------- */
 
 select::-ms-expand {
@@ -199,6 +205,13 @@ select {
   background-size: 5px 5px, 5px 5px;
 }
 
+.select-box .custom-select:hover,
+.select-box .custom-select:visited,
+.select-box .custom-select:active {
+  box-shadow: -1px 1px 9px 6px #4b5fd22b;
+  border: none;
+}
+
 .select-box .custom-select{
   width: 100%;
   background: #F7F9FC;
@@ -206,6 +219,8 @@ select {
   border-radius: .5rem;
   padding: .5rem;
 }
+
+
 
 /* RADIO BUTTON-------------- */
 
