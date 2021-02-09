@@ -51,6 +51,11 @@ a {
   border-radius: .5rem;
 }
 
+.active-box {
+  box-shadow: -1px 1px 9px 6px #4b5fd22b;
+  border: transparent 1px solid!important;
+}
+
 .navbar {
   background-color:  white ;
   padding: 8px 2rem;
@@ -133,7 +138,7 @@ a {
   width: 100%;
   resize: none;
   background-color: transparent;
-  border: 1px solid #C6CBD4;;
+  border: 1px solid #C6CBD4;
   border-radius: .5rem;
   padding: 1rem;
   transition: .2s;
@@ -151,35 +156,17 @@ a {
   font-weight: normal;
 }
 
-.editbox-textarea:hover,
-.editbox-textarea:visited,
-.editbox-textarea:active {
-  box-shadow: -1px 1px 9px 6px #4b5fd22b;
-  border-color: transparent;
-}
-
-.shadow {
-  box-shadow: -1px 1px 9px 6px #4b5fd22b;
-  border: none;
-}
-
 .editbox .edit-bottom { transform: translate(-.5rem, -1rem);}
 
 /* CUSTOM INPUT--------------- */
 
 .custom-input input {
-  border: .5px solid rgba(1,1,1,.3);
+  border: 1px solid #C6CBD4;
   border-radius: .5rem;
   padding: .5rem;
   font-family: inherit;
   color: var(--text-secondary);
-}
-
-.custom-input input:hover,
-.custom-input input:visited,
-.custom-input input:active {
-  box-shadow: -1px 1px 9px 6px #4b5fd22b;
-  border: none;
+  transition: .2s;
 }
 
 /* SELECT-BOX -------------- */
@@ -205,13 +192,6 @@ select {
   background-size: 5px 5px, 5px 5px;
 }
 
-.select-box .custom-select:hover,
-.select-box .custom-select:visited,
-.select-box .custom-select:active {
-  box-shadow: -1px 1px 9px 6px #4b5fd22b;
-  border: none;
-}
-
 .select-box .custom-select{
   width: 100%;
   background: #F7F9FC;
@@ -220,9 +200,7 @@ select {
   padding: .5rem;
 }
 
-
-
-/* RADIO BUTTON-------------- */
+/* RADIO BUTTON--------------*/
 
 .radio-button label {
   display: flex;

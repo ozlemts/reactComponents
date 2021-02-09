@@ -10,12 +10,13 @@ export const EditBox = (props) => {
 		setRemainedChar(maxChar - e.target.value.length);
 	};
 
-	const makeEditable = () => {
-		setEditable( !isEditable);
+	const handleFocus= (e) => {
+		setEditable( true);
 	}
 
-	const makeDisabled = () => {
-		setEditable( !isEditable);
+	const handleBlur = (e) => {
+		console.log( 'Saved:', e.target.value);
+		setEditable( false);
 	}
 
 	return (
@@ -29,10 +30,9 @@ export const EditBox = (props) => {
 				rows={rows}
 				maxLength={maxChar}
 				onChange={handleChange}
-				onMouseOver={makeEditable}
-				onMouseLeave={makeDisabled}
-				onBlur={ event => console.log( 'Saved:', event.target.value)}
-				className={`editbox-textarea ${isEditable ? "text-edit" : ""}`}
+				onBlur={handleBlur}
+				onFocus={handleFocus}
+				className={`editbox-textarea ${isEditable ? "text-edit active-box" : ""} `}
 			></textarea>
 			<div className={`edit-bottom  d-flex justify-content-end text-detail ${isEditable ? "" : "invisible"}`}>
 				<i className="remained-char">
