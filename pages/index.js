@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import CustomInput from "../components/CustomInput";
 import SelectBox from "../components/SelectBox";
 import RadioButton from "../components/RadioButton";
+import TeamMemberEditor from "../components/TeamMemberEditor";
 
 const Index = () => {
 	return (
@@ -43,7 +44,9 @@ const Index = () => {
 						<EditBox label="GrowthStrategy" />
 						<EditBox label="Competitive Advantage" />
 					</div>
-					<div className="box">box-4</div>
+					<div className="box">
+						<TeamMemberEditor/>
+					</div>
 				</div>
 			</div>
 			<Footer/>

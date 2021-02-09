@@ -2,26 +2,18 @@ import React, { useState } from "react";
 
 export const TeamMember = (props) => {
 
-	const teamData = [{
-		id: 1,
-		name: 'Burak Sevindi',
-		img_src: 'name 1',
-		share: 40
-	}, {
-		id: 2,
-		name: 'Özlem TS',
-		label: 'name 2',
-		share: 40
-	}, {
-		id: 3,
-		name: 'Mert Sevindi',
-		label: 'name 3',
-		share: 40
-	}];
-
 	return (
-		<div className="box">
-			<img className="h-3" src='/ok.svg'/>
+		<div className="w-full d-flex justify-content-between align-items-center mb-1">
+			<div className="d-flex align-items-center">
+				<img className="h-3 mr-2" src={props.img_src}/>
+				<div>
+					<div>{props.name}</div>
+					<div className="text-detail">{props.status}</div>
+				</div>
+			</div>
+			<span className="text-detail" style={
+				{fontSize: '1.2rem'}
+			}>{props.share} %</span>
 		</div>
 	);
 };
