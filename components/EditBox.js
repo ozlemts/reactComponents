@@ -18,7 +18,6 @@ export const EditBox = (props) => {
 		setEditable( !isEditable);
 	}
 
-
 	return (
 		<div className="editbox">
 			<div className="custom-label" >
