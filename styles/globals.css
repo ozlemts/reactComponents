@@ -210,9 +210,9 @@ select {
 .select-box .custom-select{
   width: 100%;
   background: #f5f5fa;
-  border: none;
   border-radius: .5rem;
   padding: .5rem;
+  border: transparent .5px solid;
 }
 
 .select-box .custom-select:hover{ border: #9090cc .5px solid;}

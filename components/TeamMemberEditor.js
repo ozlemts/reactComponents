@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import TeamMember from "./TeamMember";
+import CustomInput from "./CustomInput";
+import SelectBox from "./SelectBox";
 
 export const TeamMemberEditor = (props) => {
 
@@ -38,6 +40,11 @@ export const TeamMemberEditor = (props) => {
 					/>
 				)
 			})}
+			<SelectBox label="Investment Need (USD)"/>
+			<SelectBox/>
+			<SelectBox/>
+			<CustomInput/>
+
 		</div>
 	);
 };
