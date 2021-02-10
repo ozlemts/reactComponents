@@ -2,22 +2,30 @@ import React, { useState } from "react";
 
 const ImageButton = (props) => {
 
-	const changeLogo = () => {
-		console.log('img')
+	const [isShowed, setShowed] = useState(false);
+
+	const showChangeButton = () => {
+		setShowed(true);
+	};
+
+	const hideChangeButton = () => {
+		setShowed(false);
 	};
 
 	return (
-		<div>
-			<div className="position-relative d-flex justify-content-center align-items-center">
+		<div className="image-button">
+			<div
+				className="position-relative d-flex justify-content-center align-items-center"
+				onMouseOver={showChangeButton}
+				onMouseLeave={hideChangeButton}
+			>
 				<img
 					src='/default-logo.png'
 					className="w-full"
-					onClick={changeLogo()}
 				/>
-				<div className="position-absolute">
-					<label htmlFor="file-upload">
-						<img src="/edit.svg" className="circle-img"/>
-					</label>
+				<div className={`position-absolute ${isShowed ? "" : "invisible"}`}>
+					<label htmlFor="file-upload"
+					>Choose Image</label>
 					<input id="file-upload" type="file"/>
 				</div>
 			</div>
