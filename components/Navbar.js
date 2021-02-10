@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import StartupLogin from "../pages/startupLogin";
 
 const Navbar = () => {
 
@@ -35,8 +36,8 @@ const Navbar = () => {
 						<a href='/' className='navbar-item'>
 							Home
 						</a>
-						<a href='/' className='navbar-item'>
-							Documentation
+						<a href='/startupLogin' className='navbar-item'>
+							Login
 						</a>
 					</div>
 				</div>

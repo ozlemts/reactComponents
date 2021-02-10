@@ -155,6 +155,8 @@ background-color: #C6CBD4}
   transition: .2s;
 }
 
+.editbox .editbox-textarea:hover{ border: #9090cc .5px solid;}
+
 .editbox .editbox-textarea:focus,
 :active,
 :visited {
@@ -179,6 +181,8 @@ background-color: #C6CBD4}
   color: var(--text-secondary);
   transition: .2s;
 }
+
+.custom-input input:hover{ border: #9090cc .5px solid;}
 
 /* SELECT-BOX -------------- */
 
@@ -210,6 +214,8 @@ select {
   border-radius: .5rem;
   padding: .5rem;
 }
+
+.select-box .custom-select:hover{ border: #9090cc .5px solid;}
 
 /* RADIO BUTTON--------------*/
 
