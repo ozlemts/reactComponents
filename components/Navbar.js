@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import StartupLogin from "../pages/startupLogin";
 
 const Navbar = () => {
 

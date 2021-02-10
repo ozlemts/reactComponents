@@ -1,10 +1,16 @@
 .d-none {display: none!important;}
 .invisible { visibility: hidden;}
+
+.position-absolute { position: absolute}
+.position-relative { position: relative}
 /* Width and Height --------------------------- */
 .w-full { width: 100%; }
 .w-screen { width: 100vw; }
 .w-min { width: min-content; }
 .w-max { width: max-content; }
+.w-25 { width: 25%}
+.w-50 { width: 50%}
+.w-75 { width: 75%}
 
 .h-full { height: 100%; }
 .h-screen { height: 100vh; }

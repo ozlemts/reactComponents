@@ -40,10 +40,11 @@ export const TeamMemberEditor = (props) => {
 					/>
 				)
 			})}
-			<SelectBox label="Investment Need (USD)"/>
-			<SelectBox/>
-			<SelectBox/>
-			<CustomInput/>
+			<SelectBox label="Persona"/>
+			<CustomInput label="Email"/>
+			<CustomInput label="Title"/>
+			<SelectBox label="Status"/>
+			<CustomInput label="Found Share"/>
 
 		</div>
 	);

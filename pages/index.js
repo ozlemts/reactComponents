@@ -6,16 +6,23 @@ import CustomInput from "../components/CustomInput";
 import SelectBox from "../components/SelectBox";
 import RadioButton from "../components/RadioButton";
 import TeamMemberEditor from "../components/TeamMemberEditor";
+import ImageButton from "../components/ImageButton";
 
 const Index = () => {
 	return (
 		<div>
 			<Navbar/>
-			<div className="container mb-1">
+			<div className="container mb-2">
 				<div className="box-container-300">
 					<div className="box">
-						<CustomInput label="Company Name"/>
-						<CustomInput label="Website"/>
+						<div className="d-flex justify-content-between align-items-center">
+							<div className="w-75">
+								<CustomInput label="Company Name"/>
+								<CustomInput label="Website"/>
+							</div>
+							<ImageButton/>
+						</div>
+
 						<EditBox label="Elevator Pitch" />
 						<SelectBox label="Categories"/>
 						<SelectBox label="Technologies"/>
