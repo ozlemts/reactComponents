@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TeamMember from "./TeamMember";
 import CustomInput from "./CustomInput";
 import SelectBox from "./SelectBox";
+import ImageButton from "./ImageButton";
 
 export const TeamMemberEditor = (props) => {
 
@@ -28,8 +29,8 @@ export const TeamMemberEditor = (props) => {
 	}];
 
 	return (
-		<div className="">
-			<div className="custom-label" > Team Members</div>
+		<div>
+			<div className="custom-label"> Team Members</div>
 			{teamData.map(member => {
 				return (
 					<TeamMember
@@ -40,6 +41,11 @@ export const TeamMemberEditor = (props) => {
 					/>
 				)
 			})}
+			<div className="d-flex justify-content-between align-items-center">
+				<ImageButton className="h-3"/>
+				<div className="w-75 mr-2">
+				<CustomInput label="Name Surname" className="w-75"/>
+			</div>
 			<SelectBox label="Persona"/>
 			<CustomInput label="Email"/>
 			<CustomInput label="Title"/>

@@ -2,9 +2,18 @@ import React, { useState } from "react";
 
 export const TeamMember = (props) => {
 
+	const [isEditable, setEditable] = useState(false);
+
+	const handleEdit= (e) => {
+		setEditable( true);
+	}
+
 	return (
 		<div>
-			<div className="w-full d-flex justify-content-between align-items-center p-1 member-container mb-05">
+			<div
+				className={`w-full d-flex justify-content-between align-items-center p-1 member-container mb-05 ${isEditable ? "active-box" : ""} `}
+				onClick={handleEdit}
+			>
 				<div className="d-flex align-items-center">
 					<img className="h-3 mr-2" src={props.img_src}/>
 					<div>
