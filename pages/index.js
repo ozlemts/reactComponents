@@ -16,7 +16,7 @@ const Index = () => {
 				<div className="box-container-300">
 					<div className="box">
 						<div className="d-flex justify-content-between align-items-center">
-							<div className="w-75">
+							<div className="w-75 mr-2">
 								<CustomInput label="Company Name"/>
 								<CustomInput label="Website"/>
 							</div>
