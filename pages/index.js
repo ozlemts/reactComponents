@@ -1,4 +1,4 @@
-import React from 'react';
+import Head from "next/head";
 import Navbar from '../components/Navbar.js';
 import EditBox from "../components/EditBox";
 import Footer from "../components/Footer";
@@ -7,10 +7,16 @@ import SelectBox from "../components/SelectBox";
 import RadioButton from "../components/RadioButton";
 import TeamMemberEditor from "../components/TeamMemberEditor";
 import ImageButton from "../components/ImageButton";
+import Layout from "../components/Layout";
 
 const Index = () => {
 	return (
-		<div>
+
+		<Layout darkMode="true">
+			<Head>
+				<title>StartupDeal</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<Navbar/>
 			<div className="container mb-2">
 				<div className="box-container-300">
@@ -22,7 +28,6 @@ const Index = () => {
 							</div>
 							<ImageButton/>
 						</div>
-
 						<EditBox label="Elevator Pitch" />
 						<SelectBox label="Categories"/>
 						<SelectBox label="Technologies"/>
@@ -57,7 +62,8 @@ const Index = () => {
 				</div>
 			</div>
 			<Footer/>
-		</div>
+		</Layout>
+
 	);
 }
 export default Index;

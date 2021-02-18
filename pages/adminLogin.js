@@ -1,5 +1,9 @@
+import Layout from "../components/Layout";
+
 export default function Home() {
    return (
-    <div>Admin Login</div>
+       <Layout>
+           <div>Admin Login</div>
+       </Layout>
    )
  }

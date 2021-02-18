@@ -31,9 +31,10 @@ export const TeamMemberEditor = (props) => {
 	return (
 		<div>
 			<div className="custom-label"> Team Members</div>
-			{teamData.map(member => {
+			{teamData.map((member, i) => {
 				return (
 					<TeamMember
+						key={i}
 						name={member.name}
 						status={member.status}
 						share={member.share}
@@ -42,16 +43,17 @@ export const TeamMemberEditor = (props) => {
 				)
 			})}
 			<div className="d-flex justify-content-between align-items-center">
-				<ImageButton className="h-3"/>
-				<div className="w-75 mr-2">
-				<CustomInput label="Name Surname" className="w-75"/>
+				<ImageButton/>
+				<div className="w-75 ml-2">
+					<CustomInput label="Name" className=""/>
+					<CustomInput label="Surname" className=""/>
+				</div>
 			</div>
 			<SelectBox label="Persona"/>
 			<CustomInput label="Email"/>
 			<CustomInput label="Title"/>
 			<SelectBox label="Status"/>
 			<CustomInput label="Found Share"/>
-
 		</div>
 	);
 };

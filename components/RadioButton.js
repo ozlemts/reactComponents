@@ -30,9 +30,9 @@ export const RadioButton = () => {
 
 	return (
 		<div className="radio-button d-flex justify-content-between">
-			{someData.map(option => {
+			{someData.map((option, i) => {
 				return (
-					<label>
+					<label key={i}>
 						<input
 							type="radio"
 							id={option.id}

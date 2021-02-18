@@ -20,12 +20,12 @@ const ImageButton = (props) => {
 				onMouseLeave={hideChangeButton}
 			>
 				<img
-					src='/default-logo.png'
-					className="w-full"
+					src='/default-img.png'
+					className="w-full rounded-circle"
 				/>
 				<div className={`position-absolute ${isShowed ? "" : "invisible"}`}>
 					<label htmlFor="file-upload"
-					>Choose Image</label>
+					>Change</label>
 					<input id="file-upload" type="file"/>
 				</div>
 			</div>
